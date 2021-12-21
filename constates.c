@@ -1,5 +1,15 @@
-"Es de humanos herrar"
+#include <stdio.h>
 
-const int costoHotDog = 100
-const float totalBill = 100.05
-const char newLine = '\n'
+#define PIZZACOST 1.5
+const char NEWLINE = '\n';
+
+int main(){
+    float costoPizzas;
+    float numberOfSlices = 3;
+    costoPizzas = PIZZACOST * numberOfSlices;
+
+    printf("totall bill: %f", costoPizzas);
+    printf("%c", NEWLINE);
+
+    return 0;
+}
