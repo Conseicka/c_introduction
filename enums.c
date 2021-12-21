@@ -1,11 +1,18 @@
 #include <stdio.h>
-enum weekDays {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+enum deck
+ {
+    club = 0,
+    diamonds = 5,
+    hearts = 10,
+    swords = 15,
+    
+    } card;
 
 int main()
 {
 
-    enum weekDays today;
-    today = Sunday;
-    printf("Day %d", today + 1);
+    enum deck card;
+    card = swords;
+    printf("size of %d",sizeof (card));
     return 0;
 }
